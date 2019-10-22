@@ -24,9 +24,9 @@ void on_mouse(int event, int x, int y, int flags, void* param) {
 // plot points
 #define drawCross( center, color, d )                                 \
 line( img, Point( center.x - d, center.y - d ),                \
-Point( center.x + d, center.y + d ), color, 2, CV_AA, 0); \
+Point( center.x + d, center.y + d ), color, 2, CV_8U, 0); \
 line( img, Point( center.x + d, center.y - d ),                \
-Point( center.x - d, center.y + d ), color, 2, CV_AA, 0 )
+Point( center.x - d, center.y + d ), color, 2, CV_8U, 0 )
 
 int main () {
     
